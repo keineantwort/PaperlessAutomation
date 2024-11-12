@@ -6,12 +6,12 @@ from pypaperless.models.custom_fields import CustomFieldHelper
 from pla import PaperlessAccess
 
 
-async def main():
+async def main(paperless_access: PaperlessAccess):
     with open("ttcf.yaml", 'r') as the_yaml:
         config = yaml.safe_load(the_yaml)
         the_yaml.close()
 
-        paperless = PaperlessAccess(config["credentials"]).paperless()
+        paperless = paperless_access.paperless()
         mapping = {}
         for tagm in config["tags"]:
             mapping[tagm["tag_id"]] = tagm["option_value"]
@@ -45,5 +45,3 @@ async def main():
                     else:
                         print(f"{doc.id} \"{doc.title}\" already has the desired value \"{target}\" ({target_pos})")
 
-
-asyncio.run(main())

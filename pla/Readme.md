@@ -3,12 +3,6 @@ This is the main module with helper objects to access Paperless.
 
 ## Usage
 ```
-paperless = PaperlessAccess("cred.yaml").paperless()
+paperless = PaperlessAccess(url="<YOUR URL HERE>", token="<YOU TOKEN HERE>").paperless()
 docs = paperless.documents.all()
-```
-
-## Configuration
-```
-url: "<YOUR PAPERLESS URL>"
-api_token: "<YOUR TOKEN>"
 ```

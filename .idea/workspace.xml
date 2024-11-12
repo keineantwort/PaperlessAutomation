@@ -4,12 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9382a5fb-28db-448e-a44d-874f34f6bbae" name="Changes" comment="Adding LICENSE and Documentation">
-      <change afterPath="$PROJECT_DIR$/pla/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PaperlessAutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PaperlessAutomation.iml" afterDir="false" />
+    <list default="true" id="9382a5fb-28db-448e-a44d-874f34f6bbae" name="Changes" comment="Added requirements.txt and more Documentation">
+      <change afterPath="$PROJECT_DIR$/Launcher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/launcher.yaml_example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ttcf/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pla/Credentials.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pla/PaperlessAccess.py" beforeDir="false" afterPath="$PROJECT_DIR$/pla/PaperlessAccess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pla/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/pla/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ttcf/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/ttcf/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ttcf/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ttcf/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ttcf/ttcf.yaml_example" beforeDir="false" afterPath="$PROJECT_DIR$/ttcf/ttcf.yaml_example" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,27 +57,84 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.PaperlessAccess.executor&quot;: &quot;Run&quot;,
-    &quot;Python.firma_tag_to_value.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.google.cloudcode.ide_session_index&quot;: &quot;20241110_0001&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/martin/dev/git-repos/PaperlessAutomation&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.PaperlessAccess.executor": "Run",
+    "Python.firma_tag_to_value.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.google.cloudcode.ide_session_index": "20241110_0001",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/martin/dev/git-repos/PaperlessAutomation",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/ttcf" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ttcf" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/ttcf" />
     </key>
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PaperlessAutomation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PaperlessAutomation" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ttcf" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ttcf/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -120,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731307421870</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added requirements.txt and more Documentation">
+      <option name="closed" value="true" />
+      <created>1731308596338</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731308596338</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -137,6 +209,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit added PaperlessAccess.py and ttcf" />
     <MESSAGE value="Adding LICENSE and Documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding LICENSE and Documentation" />
+    <MESSAGE value="Added requirements.txt and more Documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added requirements.txt and more Documentation" />
   </component>
 </project>

@@ -1,0 +1,5 @@
+credentials:
+  url: "<YOUR PAPERLESS URL>"
+  api_token: "<YOUR TOKEN>"
+postconsumption:
+  - ttcf

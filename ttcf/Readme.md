@@ -7,7 +7,6 @@ you can automate the assignment by using Tags and this script.
 Searches for the CustomField with ID `custom_field_id`, reads all options and puts the value.
 All Tags are configured in `tags`. You can configure as many tag-option pairs as you want.
 ```
-credentials: "../cred.yaml"
 custom_field_id: <your custom field id>
 tags:
   - tag_id: <tag_id>
