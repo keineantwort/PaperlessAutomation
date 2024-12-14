@@ -47,8 +47,6 @@ class CustomFieldHandler(ABC):
                 doc.custom_fields.append(self.cfh.draft(field=self.config.id, value=value_to_set))
             print(f"{doc.title} has now custom_fields: {doc.custom_fields}")
             await doc.update()
-        # else:
-        #    print(f"{doc.id} \"{doc.title}\" already has the desired value \"{target}\" ({target_pos})")
 
     @classmethod
     def for_config(cls, config: CustomFieldConfig, api: Paperless):

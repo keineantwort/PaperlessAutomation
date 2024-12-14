@@ -49,7 +49,7 @@ class CustomFieldConfig:
 
 
 class Config:
-    def __init__(self, config_file: str = "ttcf.yaml"):
+    def __init__(self, document_id: int, config_file: str = "ttcf.yaml"):
         with open(config_file, 'r') as the_yaml:
             config = yaml.safe_load(the_yaml)
             the_yaml.close()
@@ -57,3 +57,5 @@ class Config:
         self.fields = []
         for cf in config["fields"]:
             self.fields.append(CustomFieldConfig.from_yaml(cf))
+
+        self.document_id = document_id

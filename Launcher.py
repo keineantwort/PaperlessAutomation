@@ -8,11 +8,11 @@ from pla import PaperlessAccess
 
 
 class Launcher:
-    def __init__(self, config_file="launcher.yaml"):
+    def __init__(self, document_id: int, config_file="launcher.yaml"):
         with open(config_file, 'r') as f:
             self._config = yaml.safe_load(f)
             self._rootdir = os.getcwd()
-            # TODO: Read Config from OS Properties supplied from Paperless: https://docs.paperless-ngx.com/advanced_usage/#post-consume-script
+            self._document_id = document_id
 
     def launch_post_consumption(self):
         paperless_access = PaperlessAccess(url=self._config["credentials"]["url"], token=self._config["credentials"]["api_token"])
@@ -22,5 +22,5 @@ class Launcher:
             script = importlib.import_module(f".main", package=module)
             os.chdir(path)
             print(f"set working dir to {path}")
-            asyncio.run(script.main(paperless_access))
+            asyncio.run(script.main(paperless_access, self._document_id))
             os.chdir(self._rootdir)
