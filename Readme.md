@@ -4,15 +4,19 @@ This is my approach for automating [Paperless-ngx](https://docs.paperless-ngx.co
 Goal is to use these as Post-Processing Scripts.
 
 ## Installation
-### script
-Prerequisites:
-* `python3`
+### Prerequisites
+Python 3 with version >= `3.11` has to be installed and has to be runnable by `python3`.
+
+The virtual Environment need to be setup in your installation folder: `<installation folder>/.venv`.
+
+### Installation Script (Linux)
+Prerequisites for the installation script:
 * `unzip`
 * `jq`
 
 For debian/ubuntu:
 ```
-apt-get install python unzip jq
+apt-get install unzip jq
 ```
 
 Use this bash command to install the latest release.

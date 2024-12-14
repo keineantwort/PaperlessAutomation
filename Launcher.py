@@ -19,8 +19,9 @@ class Launcher:
         for module in self._config["postconsumption"]:
             print(f"launching {module}")
             path = os.path.join(self._rootdir, module)
+            config_file = os.path.join(self._rootdir, f"{module}.yaml")
             script = importlib.import_module(f".main", package=module)
             os.chdir(path)
             print(f"set working dir to {path}")
-            asyncio.run(script.main(paperless_access, self._document_id))
+            asyncio.run(script.main(paperless_access, self._document_id, config_file))
             os.chdir(self._rootdir)

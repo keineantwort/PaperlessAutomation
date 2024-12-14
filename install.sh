@@ -21,9 +21,7 @@ mv "$target_dir"/* .
 rm  -rf "$target_dir" latest.zip
 chmod a+x post_consumption.sh
 
-python3 -m venv .venv
 source .venv/bin/activate
-
 pip install -r requirements.txt
 
 echo "Installation done. Find out how to configure at https://github.com/keineantwort/PaperlessAutomation/blob/main/Readme.md"
