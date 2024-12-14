@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9382a5fb-28db-448e-a44d-874f34f6bbae" name="Changes" comment="added post_consumption.sh with handling of one doc">
+    <list default="true" id="9382a5fb-28db-448e-a44d-874f34f6bbae" name="Changes" comment="added documentation">
       <change afterPath="$PROJECT_DIR$/install.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734165830400</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added documentation">
+      <option name="closed" value="true" />
+      <created>1734167899629</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734167899629</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,6 +239,7 @@
     <MESSAGE value="added Launcher for the PostConsumption Scripting with the possibility to run multiple Modules" />
     <MESSAGE value="Enhanced TTCF to handle multiple customfields at once" />
     <MESSAGE value="added post_consumption.sh with handling of one doc" />
-    <option name="LAST_COMMIT_MESSAGE" value="added post_consumption.sh with handling of one doc" />
+    <MESSAGE value="added documentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="added documentation" />
   </component>
 </project>
