@@ -51,6 +51,12 @@ PAPERLESS_PRE_CONSUME_SCRIPT="/var/opt/PaperlessAutomation/post_consumption.sh"
 ```
 [paperless documentation](https://docs.paperless-ngx.com/advanced_usage/#post-consume-script)
 
+## testing the installation
+You can test you installation with this script:
+```
+$ export DOCUMENT_ID=<existing document>; ./pa/post_consumption.sh 
+```
+
 ## Launcher
 ### Configuration
 The file `launcher.yaml` contains the configuration for the Post-Consumption script:

@@ -13,4 +13,7 @@ async def main(paperless_access: PaperlessAccess, document_id: int, config_file:
             handler = CustomFieldHandler.for_config(field, paperless)
 
             doc = await paperless.documents(config.document_id)
-            await handler.update_doc(doc)
+            if handler.need_work(doc):
+                await handler.update_doc(doc)
+            else:
+                print(f"skipping document {doc.id} > {doc.title}")

@@ -21,18 +21,24 @@ class CustomFieldHandler(ABC):
 
         raise ValueError(f"No CustomField found for id: {self.config.id}")
 
+    def need_work(self, doc):
+        tagsset = set(doc.tags)
+        idset = set([tag.id for tag in self.config.tags])
+        selected_tag_id = idset.intersection(tagsset)
+        return len(selected_tag_id) > 0
+
     async def _get_value(self, doc):
         tagsset = set(doc.tags)
         idset = set([tag.id for tag in self.config.tags])
         selected_tag_id = idset.intersection(tagsset)
-        if len(selected_tag_id) < 1:
-            raise ValueError(f"no tag with id in {idset} found")
-        elif len(selected_tag_id) > 1:
-            raise ValueError(f"too many tags set {selected_tag_id}")
-        else:
+        if len(selected_tag_id) == 1:
             selid = list(selected_tag_id)[0]
             result = [tag.value for tag in self.config.tags if tag.id == selid]
             return result[0] if result else None
+        elif len(selected_tag_id) > 1:
+            raise ValueError(f"too many tags set {selected_tag_id}")
+        else:
+            return None
 
     async def update_doc(self, doc):
         value_to_set = await self._get_value(doc)
