@@ -11,9 +11,10 @@ class Launcher:
     def __init__(self, document_id: int, working_dir=os.getcwd()):
         with open(os.path.join(working_dir, "launcher.yaml"), 'r') as f:
             self._config = yaml.safe_load(f)
-            self._scriptdir = os.getcwd()
+            self._scriptdir = os.path.dirname(os.path.abspath(__file__))
             self._workingdir = working_dir
             self._document_id = document_id
+            print(f"{self._workingdir} > {self._scriptdir}")
 
     def launch_post_consumption(self):
         paperless_access = PaperlessAccess(url=self._config["credentials"]["url"], token=self._config["credentials"]["api_token"])
