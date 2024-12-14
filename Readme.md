@@ -3,6 +3,31 @@ This is my approach for automating [Paperless-ngx](https://docs.paperless-ngx.co
 
 Goal is to use these as Post-Processing Scripts.
 
+## Installation
+### script
+Prerequisites:
+* `python3`
+* `unzip`
+* `jq`
+
+For debian/ubuntu:
+```
+apt-get install python unzip jq
+```
+
+Use this bash command to install the latest release.
+```
+bash -c "$(wget -qLO - https://github.com/keineantwort/PaperlessAutomation/raw/main/install.sh)"
+```
+
+After Installation proceed with the configuration as stated below.
+
+### manual
+Just download this repo at your paperless-ngx machine. Make sure `post_consumption.sh` is executable for the
+user used by paperless.
+
+After Installation proceed with the configuration as stated below.
+
 ## post consumption configuration
 Use `post_consumption.sh` as post conumption script.
 
