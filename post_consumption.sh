@@ -1,4 +1,6 @@
 #!/bin/bash
 echo "paperless postconsumption for $DOCUMENT_ID"
-source ../.venv/bin/activate
-python3 main.py --document_id $DOCUMENT_ID --working_dir ../
+script_dir=$(dirname "$0")
+parent_dir=$(dirname "$script_dir")
+source "$parent_dir"/.venv/bin/activate
+python3 "$script_dir"/main.py --document_id "$DOCUMENT_ID" --working_dir "$parent_dir"

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9382a5fb-28db-448e-a44d-874f34f6bbae" name="Changes" comment="cleaner installation process preparing for updates, removed useless cred.yaml_example">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Launcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Launcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="9382a5fb-28db-448e-a44d-874f34f6bbae" name="Changes" comment="introducing working_dir">
       <change beforePath="$PROJECT_DIR$/post_consumption.sh" beforeDir="false" afterPath="$PROJECT_DIR$/post_consumption.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -252,7 +249,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734176933576</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="introducing working_dir">
+      <option name="closed" value="true" />
+      <created>1734177566887</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1734177566887</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -278,6 +283,7 @@
     <MESSAGE value="added documentation and python setup" />
     <MESSAGE value="removed python venv setup&#10;changed configuration to root" />
     <MESSAGE value="cleaner installation process preparing for updates, removed useless cred.yaml_example" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleaner installation process preparing for updates, removed useless cred.yaml_example" />
+    <MESSAGE value="introducing working_dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="introducing working_dir" />
   </component>
 </project>
