@@ -20,7 +20,7 @@ mkdir pa
 mv "$target_dir"/* pa
 
 # delete installation files and unused directories
-#rm  -rf "$target_dir" latest.zip
+rm  -rf "$target_dir" latest.zip
 chmod a+x pa/post_consumption.sh
 
 source .venv/bin/activate
