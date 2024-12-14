@@ -3,7 +3,7 @@ from ttcf.CustomFieldHandler import CustomFieldHandler
 from ttcf.config import Config
 
 
-async def main(paperless_access: PaperlessAccess, document_id: int, config_file: str = "ttcf.yaml"):
+async def main(paperless_access: PaperlessAccess, document_id: int, config_file: str = "../ttcf.yaml"):
     config = Config(document_id=document_id,
                     config_file=config_file)
 

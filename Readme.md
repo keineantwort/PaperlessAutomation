@@ -5,9 +5,17 @@ Goal is to use these as Post-Processing Scripts.
 
 ## Installation
 ### Prerequisites
-Python 3 with version >= `3.11` has to be installed and has to be runnable by `python3`.
+Python 3 with version >= 3.11 has to be installed and has to be runnable by `python3`.
 
 The virtual Environment need to be setup in your installation folder: `<installation folder>/.venv`.
+
+Test if the virtual environment is setup properly acivate it and check, if the python version is >= 3.11:
+```
+$ cd <installation folder>
+$ source .venv/bin/activate
+(.venv) $ python3 --version
+Python 3.13.1
+```
 
 ### Installation Script (Linux)
 Prerequisites for the installation script:
