@@ -3,6 +3,17 @@ This is my approach for automating [Paperless-ngx](https://docs.paperless-ngx.co
 
 Goal is to use these as Post-Processing Scripts.
 
+## post consumption configuration
+Use `post_consumption.sh` as post conumption script.
+
+i.e.: `/etc/paperless.conf`
+```
+...
+PAPERLESS_PRE_CONSUME_SCRIPT="/var/opt/PaperlessAutomation/post_consumption.sh"
+...
+```
+[paperless documentation](https://docs.paperless-ngx.com/advanced_usage/#post-consume-script)
+
 ## Launcher
 ### Configuration
 The file `launcher.yaml` contains the configuration for the Post-Consumption script:
