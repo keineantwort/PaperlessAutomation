@@ -1,4 +1,6 @@
-custom_field_id: <your custom field id>
-tags:
-  - tag_id: <tag_id>
-    option_value: <the option value>
+fields:
+  - custom_field_id: <your custom field id>
+    type: [select|boolean]
+    tags:
+    - tag_id: <tag_id>
+      option_value: [the option value|True|False]

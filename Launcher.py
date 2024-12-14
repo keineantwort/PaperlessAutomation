@@ -12,6 +12,7 @@ class Launcher:
         with open(config_file, 'r') as f:
             self._config = yaml.safe_load(f)
             self._rootdir = os.getcwd()
+            # TODO: Read Config from OS Properties supplied from Paperless: https://docs.paperless-ngx.com/advanced_usage/#post-consume-script
 
     def launch_post_consumption(self):
         paperless_access = PaperlessAccess(url=self._config["credentials"]["url"], token=self._config["credentials"]["api_token"])

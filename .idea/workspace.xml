@@ -4,19 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9382a5fb-28db-448e-a44d-874f34f6bbae" name="Changes" comment="Added requirements.txt and more Documentation">
-      <change afterPath="$PROJECT_DIR$/Launcher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/launcher.yaml_example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ttcf/test.py" afterDir="false" />
+    <list default="true" id="9382a5fb-28db-448e-a44d-874f34f6bbae" name="Changes" comment="added Launcher for the PostConsumption Scripting with the possibility to run multiple Modules">
+      <change afterPath="$PROJECT_DIR$/ttcf/CustomFieldHandler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ttcf/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PaperlessAutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PaperlessAutomation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pla/Credentials.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pla/PaperlessAccess.py" beforeDir="false" afterPath="$PROJECT_DIR$/pla/PaperlessAccess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pla/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/pla/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ttcf/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/ttcf/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Launcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/Launcher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ttcf/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ttcf/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ttcf/ttcf.yaml_example" beforeDir="false" afterPath="$PROJECT_DIR$/ttcf/ttcf.yaml_example" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +43,10 @@
     &quot;accountId&quot;: &quot;84cc493a-5c37-401d-b9c7-d466502cc209&quot;
   }
 }</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/venv/lib/python3.13/site-packages/pypaperless/models/common.py" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/venv/lib/python3.13/site-packages/pypaperless/models/custom_fields.py" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -67,7 +68,7 @@
     "com.google.cloudcode.ide_session_index": "20241110_0001",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/martin/dev/git-repos/PaperlessAutomation",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -192,7 +193,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731308596338</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added Launcher for the PostConsumption Scripting with the possibility to run multiple Modules">
+      <option name="closed" value="true" />
+      <created>1731431925457</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1731431925457</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +219,7 @@
     <MESSAGE value="initial commit added PaperlessAccess.py and ttcf" />
     <MESSAGE value="Adding LICENSE and Documentation" />
     <MESSAGE value="Added requirements.txt and more Documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added requirements.txt and more Documentation" />
+    <MESSAGE value="added Launcher for the PostConsumption Scripting with the possibility to run multiple Modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Launcher for the PostConsumption Scripting with the possibility to run multiple Modules" />
   </component>
 </project>
