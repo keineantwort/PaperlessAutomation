@@ -1,7 +1,6 @@
-from abc import ABC, abstractmethod
+from abc import ABC
 
 from pypaperless import Paperless
-from pypaperless.models.common import CustomFieldType
 from pypaperless.models.custom_fields import CustomFieldHelper
 
 from ttcf.config import CustomFieldConfig, Types
@@ -52,7 +51,6 @@ class CustomFieldHandler(ABC):
             else:
                 doc.custom_fields.append(self.cfh.draft(field=self.config.id, value=value_to_set))
             print(f"{doc.title} has now custom_fields: {doc.custom_fields}")
-            await doc.update()
 
     @classmethod
     def for_config(cls, config: CustomFieldConfig, api: Paperless):
