@@ -26,11 +26,15 @@ _BEL.__del__ = _patched_del
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Post consumption script for paperless ngx.')
-    parser.add_argument('-d', '--document_id', type=int, help='the ID for the document to handle')
-    parser.add_argument('-w', '--working_dir', type=str, help='the owrking dir for this script.', default=os.getcwd())
+    parser.add_argument('-d', '--document_id', type=int, help='the ID for the document to handle', default=-1)
+    parser.add_argument('-w', '--working_dir', type=str, help='the working dir for this script.', default=os.getcwd())
+    parser.add_argument('-m', '--manual', action="store_true", help='the manual mode for this script')
     args = parser.parse_args()
 
     print(f"Launching post consumption for {args.document_id} with configuration in {args.working_dir}.")
 
     launcher = Launcher(document_id=args.document_id, working_dir=args.working_dir)
-    launcher.launch_post_consumption()
+    if args.manual:
+        launcher.launch_manual()
+    else:
+        launcher.launch_post_consumption()

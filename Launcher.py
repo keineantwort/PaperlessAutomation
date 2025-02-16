@@ -1,10 +1,16 @@
 import asyncio
 import importlib
 import os
+from enum import Enum
 
 import yaml
 
 from pla import PaperlessAccess
+
+
+class Mode(Enum):
+    POST_CONSUMPTION = "postconsumption"
+    MANUAL = "manual"
 
 
 class Launcher:
@@ -17,8 +23,14 @@ class Launcher:
             print(f"{self._workingdir} > {self._scriptdir}")
 
     def launch_post_consumption(self):
+        self._launch(Mode.POST_CONSUMPTION)
+
+    def launch_manual(self):
+        self._launch(Mode.MANUAL)
+
+    def _launch(self, mode: Mode):
         paperless_access = PaperlessAccess(url=self._config["credentials"]["url"], token=self._config["credentials"]["api_token"])
-        for module in self._config["postconsumption"]:
+        for module in self._config[mode.value]:
             print(f"launching {module}")
             path = os.path.join(self._scriptdir, module)
             config_file = os.path.join(self._workingdir, f"{module}.yaml")
